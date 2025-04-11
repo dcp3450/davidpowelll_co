@@ -1,0 +1,25 @@
+<dp-header></dp-header>
+
+<div class="container flex">
+  <dp-page-title title="Skill Set"></dp-page-title>
+
+  <div class="skillsets">
+    <div class="skills" *ngFor="let set of skillSet">
+      <h2>{{set.title}}</h2>
+      <ul class="skill-group">
+        <li class="skill" *ngFor="let skill of set.skills">
+          {{skill.post_title}}
+
+          <ul class="skill-bar">
+            <li class="bar" [ngClass]="barClass(skill.postmeta.knowledge[0])"></li>
+            <li><span>Beginner</span></li>
+            <li><span>Intermediate</span></li>
+            <li><span>Advanced</span></li>
+            <li><span>Expert</span></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div id="bg"></div>

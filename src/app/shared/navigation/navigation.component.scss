@@ -1,0 +1,33 @@
+@import 'vars';
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  li {
+    width: 100%;
+  }
+
+  a,
+  .no-link {
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5em;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    width: 100%;
+
+    @media screen and (max-width: 425px) {
+      font-size: 2.5em;
+    }
+
+    &:hover {
+      letter-spacing: 5px;
+    }
+  }
+}

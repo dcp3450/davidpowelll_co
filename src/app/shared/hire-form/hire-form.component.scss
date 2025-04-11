@@ -1,0 +1,60 @@
+@import 'vars';
+
+.hire-form-overlay {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,.75);
+  height: 100%;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  // opacity: 0;
+  // visibility: hidden;
+  width: 100%;
+  z-index: 1001;
+  
+  fa-icon {
+    color: white;
+    cursor: pointer;
+    font-size: 2em;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+}
+
+#hire {
+  width: 35%;
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+
+  .title {
+    color: #fff;
+    font-family: 'Roboto Slab',helvetica,arial,sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 27px;
+    margin-bottom: 10px;
+  }
+
+  input[type=email],
+  textarea {
+    border: none;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 10px;
+    resize: none;
+    width: 100%;
+  }
+}
+
+#add-msg {
+  color: #fff;
+  cursor: pointer;
+}

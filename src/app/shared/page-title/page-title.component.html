@@ -1,0 +1,6 @@
+<h1><span>
+  <ng-container *ngFor="let item of titleItems; let first = first;">
+    <ng-container *ngIf="first"><i>{{item}}</i></ng-container>
+    <ng-container *ngIf="!first"> {{item}}</ng-container>
+  </ng-container>  
+</span></h1>

@@ -1,0 +1,11 @@
+<header>
+  <div id="header" class="container">
+    <a class="logo" href="/"><span>David</span>Powell</a>
+    <fa-icon [icon]="faBars" (click)="triggerMenu()" [ngClass]="{'hide': showNav}"></fa-icon>
+  </div>
+</header>
+
+<div class="nav-overlay" [ngClass]="{'active': showNav}">
+  <fa-icon [icon]="faTimes" (click)="triggerMenu()"></fa-icon>
+  <dp-navigation></dp-navigation>
+</div>

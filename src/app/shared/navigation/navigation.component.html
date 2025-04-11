@@ -1,0 +1,15 @@
+<ul class="nav">
+  <li *ngFor="let item of navItems">
+    <a
+    *ngIf="item.classes !== 'trigger-hire'"
+    routerLink="/{{item.object_slug}}"
+    (click)="checkFunction(item.classes, $event)"
+    [ngStyle]="{'text-align': alignText}">{{item.title}}</a>
+
+    <div
+    *ngIf="item.classes === 'trigger-hire'"
+    (click)="checkFunction(item.classes)"
+    [ngStyle]="{'text-align': alignText}"
+    class="no-link">{{item.title}}</div>
+  </li>
+</ul>

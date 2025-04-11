@@ -1,0 +1,112 @@
+@import 'vars';
+
+#bg {
+  opacity: .3;
+}
+
+dp-page-title {
+  width: 50%;
+
+  @media screen and (max-width: 1024px) {
+    width: 75%;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.skillsets {
+  width: 50%;
+
+  @media screen and (max-width: 1024px) {
+    width: 75%;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+
+  .skills {
+    ul {
+      display: flex;
+      flex-flow: row wrap;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      
+      .skill {
+        display: block;
+        margin: 0 20px 20px 0;
+        width: calc(50% - 10px);
+
+        @media screen and (max-width: 550px) {
+          margin-right: 0;
+          width: 100%;
+        }
+
+        &:nth-child(even) {
+          margin-right: 0;
+        }
+      }
+
+      &.skill-bar {
+        flex-wrap: nowrap;
+        margin-top: 30px;
+        position: relative;
+    
+        li {
+          border: 1px solid black;
+          border-right: 0;
+          display: block;
+          height: 24px;
+          position: relative;
+          width: calc(25% - 1px);
+    
+          &:last-child {
+            border-right: 1px solid black;
+          }
+
+          &.bar {
+            background-color: black;
+            border: 0;
+            height: 24px;
+            left: 0;
+            position: absolute;
+            top: 0;
+            transition: width .5s ease-in;
+            width: 0%;
+
+            &.loaded {
+              &.beginner {
+                width: 25%;
+              }
+  
+              &.intermediate {
+                width: 50%;
+              }
+  
+              &.advanced {
+                width: 75%;
+              }
+  
+              &.expert {
+                width: 100%;
+              }
+            }
+          }
+    
+          span {
+            display: block;
+            font-size: .7em;
+            left: 0;
+            position: absolute;
+            text-align: center;
+            top: -100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

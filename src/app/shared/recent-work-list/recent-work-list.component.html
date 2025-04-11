@@ -1,0 +1,5 @@
+<div class="recent-work">
+  <a routerLink="/recent-work/{{work.post_name}}" class="work" *ngFor="let work of recentWork">
+    <img src="{{work.postmeta.targetimg[0]}}" />
+  </a>
+</div>

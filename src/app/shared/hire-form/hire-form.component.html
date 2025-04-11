@@ -1,0 +1,38 @@
+<div class="hire-form-overlay">
+  <fa-icon [icon]="faTimes" (click)="hideShowHireMe()"></fa-icon>
+  <div id="hire">
+    <p class="title">Hire Me</p>
+    <form id="hireForm" [formGroup]="hireForm" (ngSubmit)="onSubmit()">
+      <p class="error email" *ngIf="emailError">Please provide a valid email.</p>
+      <input type="email" name="email" placeholder="Your email" required="" formControlName="email" required />
+      <p id="add-msg" (click)="addMsg()">{{msgAction}} message</p>
+      <textarea name="message" rows="4" id="emailMsg" formControlName="msg" *ngIf="showMsgInput"></textarea>
+      <input type="submit" class="button" name="submit" value="Send" />
+    </form>
+    <!-- <div id="thankYou">
+      <p>
+        Thank you for your interest in having me on your team or project. Use
+        the optoins below to get more information about me and how I can help.
+      </p>
+      <ul class="intro-options">
+        <li>
+          <a
+            class="button"
+            href="https://admin.davidpowell.co/wp-content/uploads/2017/07/David-Powell-Resume2017-Dev.pdf"
+            target="_blank"
+            rel="noopener"
+            >Resume</a
+          >
+        </li>
+        <li>
+          <a
+            class="button"
+            href="http://linkedin.com/in/dcp3450"
+            target="_blank"
+            rel="noopener">Linkedin</a>
+        </li>
+        <li><a class="button trigger-hire" href="/recent-work">My Work</a></li>
+      </ul>
+    </div> -->
+  </div>
+</div>

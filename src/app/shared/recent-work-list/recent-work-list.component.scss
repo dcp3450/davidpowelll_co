@@ -1,0 +1,22 @@
+@import 'vars';
+
+.recent-work {
+  display: flex;
+  flex-flow: row wrap;
+
+  .work {
+    width: 25%;
+
+    @media screen and (max-width: 768px) {
+      width: 33.33%;
+    }
+
+    @media screen and (max-width: 550px) {
+      width: 50%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
