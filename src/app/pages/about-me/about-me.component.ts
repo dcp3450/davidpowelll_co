@@ -6,9 +6,10 @@ import { Subject } from 'rxjs';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'dp-about-me',
-  templateUrl: './about-me.component.html',
-  styleUrls: ['./about-me.component.scss']
+    selector: 'dp-about-me',
+    templateUrl: './about-me.component.html',
+    styleUrls: ['./about-me.component.scss'],
+    standalone: false
 })
 export class AboutMeComponent implements OnInit, OnDestroy {
   content = '';

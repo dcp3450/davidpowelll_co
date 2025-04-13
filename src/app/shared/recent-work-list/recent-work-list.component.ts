@@ -4,9 +4,10 @@ import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 
 @Component({
-  selector: 'dp-recent-work-list',
-  templateUrl: './recent-work-list.component.html',
-  styleUrls: ['./recent-work-list.component.scss']
+    selector: 'dp-recent-work-list',
+    templateUrl: './recent-work-list.component.html',
+    styleUrls: ['./recent-work-list.component.scss'],
+    standalone: false
 })
 export class RecentWorkListComponent implements OnInit, OnDestroy {
   recentWork = [];

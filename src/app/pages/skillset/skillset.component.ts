@@ -6,9 +6,10 @@ import { Subject } from 'rxjs';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'dp-skillset',
-  templateUrl: './skillset.component.html',
-  styleUrls: ['./skillset.component.scss']
+    selector: 'dp-skillset',
+    templateUrl: './skillset.component.html',
+    styleUrls: ['./skillset.component.scss'],
+    standalone: false
 })
 export class SkillsetComponent implements OnInit, OnDestroy {
   skillSet = [

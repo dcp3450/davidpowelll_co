@@ -3,9 +3,10 @@ import { GeneralService } from '../../services/general.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'dp-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+    selector: 'dp-home',
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.scss'],
+    standalone: false
 })
 export class HomeComponent implements OnInit {
   minStars = 50;

@@ -4,9 +4,10 @@ import { GeneralService } from '../../services/general.service';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'dp-hire-form',
-  templateUrl: './hire-form.component.html',
-  styleUrls: ['./hire-form.component.scss']
+    selector: 'dp-hire-form',
+    templateUrl: './hire-form.component.html',
+    styleUrls: ['./hire-form.component.scss'],
+    standalone: false
 })
 export class HireFormComponent implements OnInit {
   hireForm = new UntypedFormGroup({

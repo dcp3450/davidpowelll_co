@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'dp-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+    selector: 'dp-header',
+    templateUrl: './header.component.html',
+    styleUrls: ['./header.component.scss'],
+    standalone: false
 })
 export class HeaderComponent implements OnInit {
   showNav = false;
