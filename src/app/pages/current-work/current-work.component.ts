@@ -6,9 +6,10 @@ import { Subject } from 'rxjs';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'dp-current-work',
-  templateUrl: './current-work.component.html',
-  styleUrls: ['./current-work.component.scss']
+    selector: 'dp-current-work',
+    templateUrl: './current-work.component.html',
+    styleUrls: ['./current-work.component.scss'],
+    standalone: false
 })
 export class CurrentWorkComponent implements OnInit, OnDestroy {
   recentWork = [];

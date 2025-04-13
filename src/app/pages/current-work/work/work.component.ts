@@ -7,9 +7,10 @@ import { Subject } from 'rxjs';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'dp-work',
-  templateUrl: './work.component.html',
-  styleUrls: ['./work.component.scss']
+    selector: 'dp-work',
+    templateUrl: './work.component.html',
+    styleUrls: ['./work.component.scss'],
+    standalone: false
 })
 export class WorkComponent implements OnInit, OnDestroy {
   content = '';

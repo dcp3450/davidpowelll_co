@@ -1,9 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'dp-page-title',
-  templateUrl: './page-title.component.html',
-  styleUrls: ['./page-title.component.scss']
+    selector: 'dp-page-title',
+    templateUrl: './page-title.component.html',
+    styleUrls: ['./page-title.component.scss'],
+    standalone: false
 })
 export class PageTitleComponent implements OnInit {
   @Input() title: string;

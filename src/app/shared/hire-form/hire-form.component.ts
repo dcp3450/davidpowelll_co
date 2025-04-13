@@ -1,17 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormControl, Validators } from '@angular/forms';
 import { GeneralService } from '../../services/general.service';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'dp-hire-form',
-  templateUrl: './hire-form.component.html',
-  styleUrls: ['./hire-form.component.scss']
+    selector: 'dp-hire-form',
+    templateUrl: './hire-form.component.html',
+    styleUrls: ['./hire-form.component.scss'],
+    standalone: false
 })
 export class HireFormComponent implements OnInit {
-  hireForm = new FormGroup({
-    email: new FormControl('', [Validators.required]),
-    msg: new FormControl('')
+  hireForm = new UntypedFormGroup({
+    email: new UntypedFormControl('', [Validators.required]),
+    msg: new UntypedFormControl('')
   });
   showMsgInput = false;
   msgAction = '+ add';

@@ -3,7 +3,7 @@
     <a
     *ngIf="item.classes !== 'trigger-hire'"
     routerLink="/{{item.object_slug}}"
-    (click)="checkFunction(item.classes, $event)"
+    (click)="checkFunction(item.classes)"
     [ngStyle]="{'text-align': alignText}">{{item.title}}</a>
 
     <div

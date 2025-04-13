@@ -3,9 +3,10 @@ import { Router, NavigationEnd } from '@angular/router';
 import { GeneralService } from './services/general.service';
 
 @Component({
-  selector: 'dp-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+    selector: 'dp-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss'],
+    standalone: false
 })
 export class AppComponent implements OnInit {
   title = 'davidpowell';
